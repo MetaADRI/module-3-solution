@@ -1,0 +1,75 @@
+    <style>
+        /* Define the breakpoints for desktop, tablet, and mobile views */
+        @media (min-width: 992px) {
+            .container {
+                display: flex; /* Use flexbox layout for the sections */
+            }
+            .section {
+                flex: 1; /* Make the sections equal width */
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .container {
+                display: flex; /* Use flexbox layout for the sections */
+                flex-wrap: wrap; /* Allow the sections to wrap to the next row */
+            }
+            .section {
+                flex: 1; /* Make the sections equal width */
+            }
+            .section:nth-child(3) {
+                flex-basis: 100%; /* Make the third section take up the entire row */
+            }
+        }
+        @media (max-width: 767px) {
+            .container {
+                display: block; /* Use block layout for the sections */
+            }
+            .section {
+                width: 100%; /* Make the sections take up the entire width */
+            }
+        }
+
+        /* Define the common styles for the sections and section titles */
+        .section {
+            position: relative; /* Use relative positioning for the sections */
+            border: 1px solid black; /* Set a black border for the sections */
+            padding: 20px; /* Add some padding for the sections */
+        }
+        .section-title {
+            position: absolute; /* Use absolute positioning for the section titles */
+            top: 0; /* Align the section titles to the top */
+            right: 0; /* Align the section titles to the right */
+            border: 1px solid black; /* Set a black border for the section titles */
+            padding: 10px; /* Add some padding for the section titles */
+            color: white; /* Set the text color to white for the section titles */
+        }
+
+        /* Define the custom colors for the sections and section titles */
+        .section:nth-child(1) {
+            background-color: lightblue; /* Set the background color to light blue for the first section */
+        }
+        .section:nth-child(1) .section-title {
+            background-color: blue; /* Set the background color to blue for the first section title */
+        }
+        .section:nth-child(2) {
+            background-color: lightgreen; /* Set the background color to light green for the second section */
+        }
+        .section:nth-child(2) .section-title {
+            background-color: green; /* Set the background color to green for the second section title */
+        }
+        .section:nth-child(3) {
+            background-color: lightpink; /* Set the background color to light pink for the third section */
+        }
+        .section:nth-child(3) .section-title {
+            background-color: red; /* Set the background color to red for the third section title */
+        }
+
+        /* Define the common styles for the page heading and the content */
+        h1 {
+            text-align: center; /* Center the page heading */
+            font-family: Arial; /* Use Arial font for the page heading */
+        }
+        p {
+            font-family: Arial; /* Use Arial font for the content */
+        }
+    </style>
