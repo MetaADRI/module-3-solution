@@ -1,22 +1,56 @@
-<html>
+<!-- HTML file -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food, LLC</title>
+  <!-- Link to Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to custom CSS file -->
+  <link rel="stylesheet" href="css/style.css"> <!-- This line is where you implement the link -->
 </head>
 <body>
-    <h1>My Webpage</h1> <!-- The page heading -->
-    <div class="container"> <!-- The container for the sections -->
-        <div class="section"> <!-- The first section -->
-            <div class="section-title">Chicken</div> <!-- The first section title -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis nisi consequat ullamcorper. Quisque id lacus vitae leo aliquet tincidunt. Fusce vitae nisl quis leo sagittis ultricies.</p> <!-- The first section content -->
-        </div>
-        <div class="section"> <!-- The second section -->
-            <div class="section-title">Beef</div> <!-- The second section title -->
-            <p>Nulla facilisi. Donec et lorem quis augue aliquet finibus. Morbi vitae nisi sit amet sapien malesuada lacinia. Vivamus quis magna id nunc tincidunt aliquet.</p> <!-- The second section content -->
-        </div>
-        <div class="section"> <!-- The third section -->
-            <div class="section-title">Sushi</div> <!-- The third section title -->
-            <p>Phasellus quis nisl eu elit fringilla consequat. Curabitur quis lorem quis nisi sagittis blandit. Suspendisse quis nunc ut leo interdum vulputate.</p> <!-- The third section content -->
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xs navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Company name -->
+      <a class="navbar-brand" href="#">Food, LLC</a>
+      <!-- Menu button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Dropdown menu -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chicken</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Beef</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sushi</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!-- Page heading -->
+  <div class="container-fluid text-center">
+    <h1 class="display-4">Our Menu</h1>
+  </div>
+  <!-- Tall section -->
+  <div class="container-fluid bg-secondary">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Some dummy text -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis lorem tincidunt lacinia. Fusce vitae leo quis nisi sagittis malesuada. Morbi quis nisl sit amet sapien aliquet fringilla. Quisque vitae nisl quis leo ullamcorper consequat. Cras quis velit quis lorem ullamcorper tincidunt. Donec quis nisl quis lorem ullamcorper tincidunt. Morbi quis nisl quis lorem ullamcorper tincidunt. Cras quis nisl quis lorem ullamcorper tincidunt. Donec quis nisl quis lorem ullamcorper tincidunt.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Link to jQuery and Bootstrap JS CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
